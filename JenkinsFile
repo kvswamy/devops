@@ -30,10 +30,10 @@ node {
       }
    }
    stage('Deploy') {
-       sh 'curl -u admin:admin -T target/**.war "http://54.169.238.205:8090/manager/text/deploy?path=/devops&update=true"'
+       sh 'curl -u admin:admin -T target/**.war "http://13.229.100.132:8090/manager/text/deploy?path=/devops&update=true"'
    }
    stage("Smoke Test"){
-       sh "curl --retry-delay 10 --retry 5 http://54.169.238.205:8090/devops"
+       sh "curl --retry-delay 10 --retry 5 http://13.229.100.132:8090/devops"
    } 
    stage('Artifacts') {
       if (isUnix()) {
