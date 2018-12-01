@@ -6,15 +6,16 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+
 @Controller
-<span class="fc" id="L10">public class WelcomeController {</span>
-<span class="fc" id="L11">	private final Logger logger = LoggerFactory.getLogger(this.getClass());</span>
+<span class="fc" id="L11">public class WelcomeController {</span>
+<span class="fc" id="L12">	private final Logger logger = LoggerFactory.getLogger(this.getClass());</span>
 
 	@RequestMapping(&quot;/&quot;)
 	public String welcome(Model model) {
-<span class="fc" id="L15">		logger.info(&quot;Processing index request&quot;);</span>
-<span class="fc" id="L16">		model.addAttribute(&quot;course&quot;, &quot;DevOps&quot;);</span>
-<span class="fc" id="L17">		return &quot;index&quot;;</span>
+<span class="fc" id="L16">		logger.info(&quot;Processing index request&quot;);</span>
+<span class="fc" id="L17">		model.addAttribute(&quot;course&quot;, &quot;DevOps&quot;);</span>
+<span class="fc" id="L18">		return &quot;index&quot;;</span>
 	}
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>
